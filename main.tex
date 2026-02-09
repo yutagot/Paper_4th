@@ -1,1 +1,181 @@
-This is test
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is a "template" model document for submission to the
+%% American Chemical Society (ACS).
+%%
+%% The guidance here contains information about how you may wish to
+%% modify it to match the requirements of various ACS journals. The
+%% ACS do *not* typeset accepted articles using LaTeX, so there is
+%% no specific class required.
+%%
+%% This template deliberately does *not* seek to reproduce
+%% the layout of the typeset journal: this is explicitly not
+%% required by the ACS for LaTeX submissions.
+%%
+%% Please report any issues with the template at
+%% https://github.com/josephwright/acs-template/issues
+%%
+%% Released under the Creative Commons 0 license
+%% https://creativecommons.org/public-domain/cc0/
+%% 
+%% Copyight (c) 2025 Joseph Wright
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Font setup - delete if you are using LuaLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Adjust the margins and allow for line spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{margin = 1in}
+\usepackage{setspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Reference support
+%%
+%% The recommended method for producing the reference section is
+%% to use biblatex. If you wish to use a classical BibTeX
+%% approach, this is easiest to achieve using the achemso package.
+%% In that case, you should remove the biblatex lines.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can adjust the printing of DOI, article title, etc. using
+% package options, e.g. "doi = true"; see the biblatex manual for
+% details of adjusting the number of authors printed, e.g.
+% "maxnames = 15" to print no more than 15 authors.
+\usepackage[style = chem-acs, articletitle = true]{biblatex}
+\DeclareFieldFormat{journaltitle}{\mkbibemph{\printfield{shortjournal}}}
+\addbibresource{reference.bib}
+% If you are using classical BibTeX, remove the above lines and 
+% uncomment:
+%\usepackage{achemso}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graphic inclusion and scheme and chart support
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{float}
+\newfloat{scheme}{htbp}{los}
+\floatname{scheme}{Scheme}
+\floatname{chart}{Chart}
+\newfloat{graph}{htbp}{loh}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Common support packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{chemformula} % Formulas using \ch{}
+% or
+\usepackage[version = 4]{mhchem} % Formulas using \ce{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Many journals require that sections are unnumbered: this 
+%% is activated here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional macros here.  Please use \newcommand* where
+%% possible, and avoid layout-changing macros (which are not used
+%% when typesetting).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\newcommand{\etal}{{\it et al\/}\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Author and title data:
+%% the authblk package is currently the simplest way to provide this
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{authblk}
+\author[1,2]{Yuta Goto}
+\author[3]{Yuta Ito}
+\author[3]{Hiromu Kudo}
+\author[4]{Atsushi Ogura}
+\author[1]{Ryo Matsumura*}
+\author[1,2]{Fukata Naoki*}
+\affil[1]{International Center for Materials Nanoarchitectonics (MANA), National Institute for Materials Science, 1-1 Namiki, Tsukuba, Ibaraki, 305-0044, Japan}
+\affil[2]{Graduate School of Science and Technology, University of Tsukuba, 1-1-1 Tennodai, Tsukuba, Ibaraki, 305-8573, Japan}
+\affil[3]{School of Science and Technology, Meiji University, 1-1-1 Higashimata, Tama-ku, Kawasaki, Kanagawa, 214-8571, Japan}
+\affil[4]{Meiji Renewable Energy Laboratory, Meiji University, 1-1-1 Higashimata, Tama-ku, Kawasaki, Kanagawa, 214-8571, Japan}
+
+\title{Improvement of Light Emission and Wavelength Tunability of n-Ge(Si) Thin Films under High-Speed Continuous-Wave Laser Annealing}
+% Use the \date command for email address(s) of corresponding authors
+\date{*Email: MATSUMURA.Ryo@nims.go.jp, FUKATA.Naoki@nims.go.jp}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  % Do not exceed 300 words!
+  Germanium is a promising material for optoelectronic devices owing to its quasi-direct bandgap under tensile strain and heavy n-type doping.
+  However, achieving electron concentrations above 10$^{20}$ cm$^{-3}$ has been challenging because of the low solid solubility of dopants in Ge.
+  Nonequilibrium annealing techniques such as pulsed laser annealing have been explored to overcome this limitation, although the extremely rapid cooling rates restrict crystal growth.
+  In this work, we demonstrate electron concentration exceeding 1.0 $\times$ 10$^{20}$ cm$^{-3}$ together with high mobility ($\sim$ 100 cm$^2$/Vs) in Ge films by employing high-speed continuous-wave laser annealing. 
+  Owing to the microsecond-scale thermal process, this method simultaneously enables large-grain crystallization and efficient dopant activation, as confirmed by Raman spectroscopy and EBSD analysis.
+  Furthermore, the approach allows for high electron concentrations in n-Si$_x$Ge$_{1-x}$ (0 $\leq$ x $\leq$ 0.25).
+  Photoluminescence measurements reveal tunable emission wavelengths through the combined effects of Si incorporation and laser annealing.
+  These results indicate that the annealing method effectively introduces the in-plane tensile strain, activates dopants, and provides a versatile route for achieving highly doped Ge-based materials for infrared optoelectronic applications.
+\end{abstract}
+
+\section*{Keywords}
+nonequilibrium growth, germanium, laser anneal, solubility
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start the main part of the manuscript here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+\section{Results and discussion}
+%%%%%% Section : FIG1 %%%%%%
+
+%%%%%% Section : FIG2 %%%%%%
+
+%%%%%% Section : FIG3 %%%%%%
+
+%%%%%% Section : FIG4 %%%%%%
+
+%%%%%% Section : FIG5 %%%%%%
+
+
+\section{Experimental methods}
+\subsection{Sample preparation}
+
+\subsection{Characterization}
+
+\section*{Acknowledgements}
+
+This research was financially supported by JSPS Kakenhi (grant No.23K13370), and the World Premier International Research Center Initiative (WPI-Initiative).
+This work was also partially supported by "Advanced Research Infrastructure for Materials and Nanotechnology in Japan (ARIM)", MEXT, Japan, proposal number.
+
+\section*{Supporting information}
+
+The following files are available free of charge.
+\begin{itemize}
+  \item support\_info.pdf: Chemical composition of n-Si$_x$Ge$_{1-x}$ films measured by AES (Figure S1), Depth profile of Sb atomic concentration of n-Si$_x$Ge$_{1-x}$ (x $=$ 0.11) film measured by SIMS (Figure S2),  Ge-Ge vibrational phonon peak position of i-Ge and n-Ge without capping layer measured by Raman spectroscopy (Figure S3), and Raman spectra of n-Si$_x$Ge$_{1-x}$ films in a wider range of Raman shift (Figure S4).   
+\end{itemize}
+
+\printbibliography
+%\bibliography{acs-template.bib}
+
+\newpage
+
+% \rule{0.05in}{1.75in}%
+% \begin{minipage}[b][1.75in]{3.25in}
+%   \sffamily
+%   \frenchspacing
+
+%   Some journals require a graphical entry for the Table of Contents. This
+%   should be laid out ``print ready'' so that the sizing of the text is correct.
+
+%   The space available depends on the journal: J. Am. Chem. Soc. allows 3.25 in
+%   by 1.75 in and requires sanserif text. Some journals want different sizes:
+%   you can easily adjust here.
+  
+%   The two rules either side of the content are there to help judge the height
+%   of your material: they may be deleted once not required.
+  
+% \end{minipage}%
+% \rule{0.05in}{1.75in}
+
+\end{document}
