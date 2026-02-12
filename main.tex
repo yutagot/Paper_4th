@@ -88,17 +88,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{authblk}
 \author[1,2]{Yuta Goto}
-\author[3]{Yuta Ito}
-\author[3]{Hiromu Kudo}
-\author[4]{Atsushi Ogura}
 \author[1]{Ryo Matsumura*}
 \author[1,2]{Fukata Naoki*}
 \affil[1]{International Center for Materials Nanoarchitectonics (MANA), National Institute for Materials Science, 1-1 Namiki, Tsukuba, Ibaraki, 305-0044, Japan}
 \affil[2]{Graduate School of Science and Technology, University of Tsukuba, 1-1-1 Tennodai, Tsukuba, Ibaraki, 305-8573, Japan}
-\affil[3]{School of Science and Technology, Meiji University, 1-1-1 Higashimata, Tama-ku, Kawasaki, Kanagawa, 214-8571, Japan}
-\affil[4]{Meiji Renewable Energy Laboratory, Meiji University, 1-1-1 Higashimata, Tama-ku, Kawasaki, Kanagawa, 214-8571, Japan}
 
-\title{Improvement of Light Emission and Wavelength Tunability of n-Ge(Si) Thin Films under High-Speed Continuous-Wave Laser Annealing}
+\title{Optimal conditions for crystallization of amorphous germanium thin films by high-speed laser annealing}
 % Use the \date command for email address(s) of corresponding authors
 \date{*Email: MATSUMURA.Ryo@nims.go.jp, FUKATA.Naoki@nims.go.jp}
 
@@ -107,52 +102,104 @@
 \maketitle
 
 \begin{abstract}
-  % Do not exceed 300 words!
-  Germanium is a promising material for optoelectronic devices owing to its quasi-direct bandgap under tensile strain and heavy n-type doping.
-  However, achieving electron concentrations above 10$^{20}$ cm$^{-3}$ has been challenging because of the low solid solubility of dopants in Ge.
-  Nonequilibrium annealing techniques such as pulsed laser annealing have been explored to overcome this limitation, although the extremely rapid cooling rates restrict crystal growth.
-  In this work, we demonstrate electron concentration exceeding 1.0 $\times$ 10$^{20}$ cm$^{-3}$ together with high mobility ($\sim$ 100 cm$^2$/Vs) in Ge films by employing high-speed continuous-wave laser annealing. 
-  Owing to the microsecond-scale thermal process, this method simultaneously enables large-grain crystallization and efficient dopant activation, as confirmed by Raman spectroscopy and EBSD analysis.
-  Furthermore, the approach allows for high electron concentrations in n-Si$_x$Ge$_{1-x}$ (0 $\leq$ x $\leq$ 0.25).
-  Photoluminescence measurements reveal tunable emission wavelengths through the combined effects of Si incorporation and laser annealing.
-  These results indicate that the annealing method effectively introduces the in-plane tensile strain, activates dopants, and provides a versatile route for achieving highly doped Ge-based materials for infrared optoelectronic applications.
 \end{abstract}
 
 \section*{Keywords}
-nonequilibrium growth, germanium, laser anneal, solubility
+thin film, germanium, laser anneal, crystallization
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Start the main part of the manuscript here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-
-\section{Results and discussion}
-%%%%%% Section : FIG1 %%%%%%
-
-%%%%%% Section : FIG2 %%%%%%
-
-%%%%%% Section : FIG3 %%%%%%
-
-%%%%%% Section : FIG4 %%%%%%
-
-%%%%%% Section : FIG5 %%%%%%
-
+Germanium (Ge) exhibits superior carrier mobility compared to silicon (Si), making it attractive for electronic applications.
+To realize these applications, Ge-on-insulator (GOI) structures are essential not only because Ge substrates are expensive but also the parasitic resistance and the carrier mobility can be improved.
+The easiest way to fabricate GOI structures is crystallization of amorphous Ge (a-Ge) thin films deposited on insulator substrates, such as SiO$_2$/Si.
+Solid phase crystallization (SPC) is a widely used method for crystallization of a-Ge thin films, which can be performed just by thermal annealing at 400 - 500 ${}^\circ$C.
+Although it can crystallize a-Ge films in large area, it requires long annealing time up to 100 hours.
+In addition, the crystal orientation of the film is random, which limits the performance of devices fabricated on the films.
+Metal-induced crystallization (MIC) also can crystallize a-Ge films at low temperature, but the metal contamination from the catalyst metals is a critical issue for device applications. 
+Liquid phase crystallization (LPC) is another method for crystallization of a-Ge films.
+Although many reports exist on LPC of a-Ge films using rapid thermal annealing (RTA) or pulsed laser annealing, continuous wave laser annealing has attracted attention as it can achieve large-area single-crystal films by scanning the laser beam.
+Not only that, it can be utilized to activate dopants or alloy elements in Ge films beyond the equilibrium solubility limit as the annealing time can be modulated from miliseconds to microseconds by the laser scan speed.
+In addition, various wavelengths of lasers, such as visible and ultraviolet, enabling selective heating of Ge films without heating the substrates.
+However, continuous wave laser annealing possesses many parameters originating from laser (laser power, scan speed), Ge film (deposition temperature), and capping layer (thickness).
+To achieve high-quality crystallization of a-Ge films by LPC, understanding effects of those parameters on the crystallization behavior is essential. 
+Thus, in this study, we systematically investigated the effects of various parameters on the crystallization behavior of a-Ge films by LPC.
+Whereas LPC melts amorphous films and solidifies them into crystalline films, it was found that the initial properties of the films affect the crystallization behavior. 
+Although some reports achieved large-area single-crystal using continous laser scan, the scan speed was slow (- XX cm/s) and not suitable for mass production.
+In addition, required grain size for thin film transistors is up to several micrometers, thus deviation inside the thin film is more important for device performance.
+Pulsed laser annealing, whose annealing time is on the order of nanoseconds, is generally employed for crystallization of amorohous silicon to avoid thermal damage to the substrate.
+However, this limits the crystal size up to a few micrometers.
+Moreover, it is difficult to irradiate large are of a-Ge films because Ge has high surface energy and it agglomerates during pulsed laser annealing.
+Thus, we employed high-speed continuous wave laser annealing whose annealing time is on the order of microseconds, to achieve fast crystallization of a-Ge films without thermal damage and agglomeration.
+Finite element method (FEM) simulation was also performed to understand the temperature evolution during laser annealing and the crystallization mechanism change when the parameters were swept.
+In addition, we combined post annealing with continuous wave laser annealing to further improve the crystal quality and the carrier mobility of the films.
+Defects in Ge films are electrically active and they have p-type conductivity.
+We demonstrated that the carrier concentration decreased to $\sim$ 1.0 $\times$ 10$^{17}$ cm$^{-3}$ with the Hall mobility up to 400 cm$^2$/Vs.
+The obtained results offer deep insights into the crystallization of a-Ge films by high-speed laser annealing and pave a way for fabricating high-performance Ge-based devices on insulator substrates.
 
 \section{Experimental methods}
 \subsection{Sample preparation}
-
+Quartz glass substrates were ultrasonically cleaned by accetone, deionized water.
+Subsequently, they were cleaned by dilluted hydrofluoric acid. 
+Amorphous Ge thin films with a thickness of 100 nm were deposited on the substrates by molecular beam deposition.
+Capping layers of SiO$_2$ were deposited on the a-Ge films by RF magnetron sputtering to suppress the agglomeration and oxidation of the films.
+High-speed laser annealing was performed using a continous waeve laser with a wavelemgth of 532 nm.
+The samples were mounted on a rotable stage and the laser beam was scanned at various speeds from XX to 15 m/s.
+The laser possessed a Gaussian profile with a diamter of 20 \textmu m.
+After annealing, the capping layers were removed by hydrofluoric acid for measurements.
+For Hall measurements, the annealed samples were patterned into clover-leaf structures by photolithography and dry etching.
+Post annealing was also performed in a nitrogen atmosphere at 500 ${}^\circ$C to investigate its effect on the crystallinity and carrier mobility.
 \subsection{Characterization}
+Electron backscatter diffraction (EBSD) measurements were performed to evaluate the crystal orientation and grain size of the annealed Ge films.
+Raman spectroscopy was performed to evaluate the crystallinity of the deposited Ge films before laser annealing.
+Ultravoilet-Visible (UV-Vis) spectroscopy was performed to evaluate the absorption properties of the deposited Ge films.
+Hall measurements were conducted using the van der Pauw method to evaluate the carrier concentration and Hall mobility of the annealed Ge films at room temperature.
+
+\section{Results and discussion}
+%%%%%% Section : FIG1 %%%%%%
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{../Figures/Figure1/Figure1.pdf}
+  \caption{IPF colors of the laser-annealed Ge films deposited at (a) room temperature, (b) 150 ${}^\circ$C, (c) 300 ${}^\circ$C, (d) 450 ${}^\circ$C, and (e) 600 ${}^\circ$C, respectively. The scan speed and laser power were fixed at 15 m/s and 2000 mW, respectively. Schematic illustrations of the crystallization behavior of the Ge films deposited at (f) low temperature below 150 ${}^\circ$C and (g) high temperature above 300 ${}^\circ$C during laser annealing.}
+  \centering
+  \includegraphics[width=\linewidth]{../Figures/Figure2/Figure2.pdf}
+  \caption{IPF colors of the laser-annealed Ge films deposited at (a) room temperature, (b) 150 ${}^\circ$C, (c) 300 ${}^\circ$C, (d) 450 ${}^\circ$C, and (e) 600 ${}^\circ$C, respectively. The scan speed and laser power were fixed at 0.67 m/s and 300 mW, respectively.}
+  \label{fgr:fig2}
+\end{figure}
+%%%%%% Section : FIG3 %%%%%%
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{../Figures/Figure3/Figure3.pdf}
+  \caption{(a) Raman spectra of the Ge films deposited at room temperature, 150 ${}^\circ$C, 300 ${}^\circ$C, 450 ${}^\circ$C, and 600 ${}^\circ$C, respectively. The dashed line indicates the vibrational mode of Ge obtained from Ge substrate (300.2 cm$^{-1}$). (b) Absorption spectra of the Ge films deposited at room temperature, 150 ${}^\circ$C, 300 ${}^\circ$C, 450 ${}^\circ$C, and 600 ${}^\circ$C, respectively. (b-1) Transmittance spectra of the Ge films deposited at room temperature, 150 ${}^\circ$C, 300 ${}^\circ$C, 450 ${}^\circ$C, and 600 ${}^\circ$C, respectively. (b-2) Absorption spectra and (b-2) absorbance spectra of the Ge films deposited at room temperature, 150 ${}^\circ$C, 300 ${}^\circ$C, 450 ${}^\circ$C, and 600 ${}^\circ$C, respectively. The calculated transmittance and absorbance spectra of a single-crystal Ge film on quartz glass substrate are also shown for comparison. The dashed line indicates the wavelength of the laser (532 nm).}
+  \label{fgr:fig3}
+\end{figure}
+%%%%%% Section : FIG4 %%%%%%
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{../Figures/Figure4/Figure4.pdf}
+  \caption{IPF colors of the laser-annealed Ge films deposited at 450 ${}^\circ$C with various scan speeds of XXX.}
+  \label{fgr:fig4}
+\end{figure}
+%%%%%% Section : FIG5 %%%%%%
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=\linewidth]{../Figures/Figure5/Figure5.pdf}
+%   \caption{}
+%   \label{fgr:fig5}
+% \end{figure}
+
+
+
 
 \section*{Acknowledgements}
-
 This research was financially supported by JSPS Kakenhi (grant No.23K13370), and the World Premier International Research Center Initiative (WPI-Initiative).
 This work was also partially supported by "Advanced Research Infrastructure for Materials and Nanotechnology in Japan (ARIM)", MEXT, Japan, proposal number.
 
 \section*{Supporting information}
-
 The following files are available free of charge.
 \begin{itemize}
-  \item support\_info.pdf: Chemical composition of n-Si$_x$Ge$_{1-x}$ films measured by AES (Figure S1), Depth profile of Sb atomic concentration of n-Si$_x$Ge$_{1-x}$ (x $=$ 0.11) film measured by SIMS (Figure S2),  Ge-Ge vibrational phonon peak position of i-Ge and n-Ge without capping layer measured by Raman spectroscopy (Figure S3), and Raman spectra of n-Si$_x$Ge$_{1-x}$ films in a wider range of Raman shift (Figure S4).   
+  \item support\_info.pdf: A schematic illustration of the clover-leaf structure of the annealed Ge films by photolithography and dry etching (Figure S1), Description of equations and material parameters used in the FEM simulation (Table S1 and Figure S2).   
 \end{itemize}
 
 \printbibliography
